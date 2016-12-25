@@ -475,6 +475,26 @@ iframe {
     }
 }
 
+.nav-pills {
+    margin-bottom: 30px;
+    >li {
+        &.active {
+            >a {
+                background-color: @btn-color;
+            }
+        }
+        >a {
+            border-radius: 0;
+            background-color: @white;
+            text-transform: uppercase;
+            &:hover {
+                background-color: @btn-color;
+                color: @white;
+            }
+        }
+    }
+}
+
 /* Language Section */
 .languages {
     .item {

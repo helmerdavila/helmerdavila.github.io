@@ -161,141 +161,144 @@ html(lang='en')
                     // //section
                 // //secondary
                 .primary.col-md-8.col-sm-12.col-xs-12
-                    section.about.section
-                        .section-inner
-                            h2.heading 
-                                | About Me
-                                a.btn.btn-sm.btn-cta-primary.pull-right(href='index_es.html')
-                                    i.fa.fa-language
-                                    |  Español
-                            .content
-                                p
-                                    | Hi, my name is Helmer Dávila, and I am from Peru. I am a PHP Backend Developer with the latest technologies and design patterns, I write code in Javascript/Jquery/Coffescript, HTML/Jade, CSS/SCSS and use Shared and Dedicated Servers to host my apps. I like to write clean and maintainable code following patterns, with the OOP and Testing always in mind.
-                                p
-                                    | I play with some frameworks, regularly develop or improve open source projects, because I am always open to new technologies.
-                            // //content
-                        // //section-inner
-                    // //section
-                    section.latest.section
-                        .section-inner
-                            h2.heading Latest Projects
-                            .content
-                                .item.featured.text-center
-                                    h3.title
-                                        a(href='#', target='_blank') Disease Diagnostic Application
-                                    p.summary My last project
-                                    .featured-image
-                                        a(href='http://github.com/helmerdavila/disease-diagnostic-laravel', target='_blank')
-                                            img.img-responsive.project-image(src='assets/images/medic.png', alt='Disease Diagnostic')
-                                        .ribbon
-                                            .text OpenSource
-                                    .desc.text-left
+                    ul.nav.nav-pills.nav-justified
+                        li.active
+                            a(href="#about_experiencie", aria-controls='about_experiencie', role='tab', data-toggle='tab')
+                                i.fa.fa-user-circle
+                                strong &nbsp;&nbsp; About me
+                        li
+                            a(href="#projects_portfolio", aria-controls='projects_portfolio', role='tab', data-toggle='tab')
+                                i.fa.fa-rocket
+                                strong &nbsp;&nbsp; Portfolio
+                        li
+                            a(href="#github_activity", aria-controls='github_activity', role='tab', data-toggle='tab')
+                                i.fa.fa-github
+                                strong &nbsp;&nbsp; Github Activity
+                    .tab-content
+                        #about_experiencie.tab-pane.active(role='tabpanel')
+                            section.about.section
+                                .section-inner
+                                    h2.heading 
+                                        | About Me
+                                        a.btn.btn-sm.btn-cta-primary.pull-right(href='index_es.html')
+                                            i.fa.fa-language
+                                            |  Español
+                                    .content
                                         p
-                                            | This is my first open source Laravel project. The Disease Diagnostic it's a web browser app helpful for any doctor, take the patient
-                                            | diagnostic information, show detailed charts and statistics from every state (or city).
+                                            | Hi, my name is Helmer Dávila, and I am from Peru. I am a PHP Backend Developer with the latest technologies and design patterns, I write code in Javascript/Jquery/Coffescript, HTML/Jade, CSS/SCSS and use Shared and Dedicated Servers to host my apps. I like to write clean and maintainable code following patterns, with the OOP and Testing always in mind.
                                         p
-                                            | The application was developed for my Engineer Degree, and the target is Peruvian people. My next goal is bring this to all people and
-                                            | it will be translated to english language.
-                                        p
-                                            | PS: Do you give me a star to my project in Github?
-                                        p
-                                            span.label.label-info Open Source
-                                            span.label.label-info Travis CI
-                                            span.label.label-info Laravel
-                                            span.label.label-info Spanish
-                                hr.divider
-                                .item.row
-                                    .desc.col-md-12.col-sm-12.col-xs-12
-                                        h3.title
-                                            a(href='#') LexPeru
-                                        p SaaS app for management, search and query Peruvian laws.
-                                        p
-                                            a.more-link(href='#')
-                                                i.fa.fa-external-link
-                                                |  Private setup
-                                .item.row
-                                    .desc.col-md-12.col-sm-12.col-xs-12
-                                        h3.title
-                                            a(href='#') Inventory Management
-                                        p
-                                            | This application can be used for small and intermediate stores, see the products stock, makes sells, generate reports.
-                                        p
-                                            a.more-link(href='#')
-                                                i.fa.fa-external-link
-                                                |  Private setup
-                                .item.row
-                                    .desc.col-md-12.col-sm-12.col-xs-12
-                                        h3.title
-                                            a(href='http://kuickit.com', target='_blank') Kuickit
-                                        p Very nice web site with interestig information about curious things.
-                                        p
-                                            a.more-link(href='http://kuickit.com', target='_blank')
-                                                i.fa.fa-external-link
-                                                |  See this site!
-                                .item.row
-                                    .desc.col-md-12.col-sm-12.col-xs-12
-                                        h3.title
-                                            a(href='http://chusmaposters.com', target='_blank') Chusmaposters
-                                        p Small store for sell beautiful and geek posters with wooden frames.
-                                        p
-                                            a.more-link(href='http://chusmaposters.com', target='_blank')
-                                                i.fa.fa-external-link
-                                                |  See this site!
-                            // //content
-                        // //section-inner
-                    // //section
-                    section.experience.section
-                        .section-inner
-                            h2.heading Work Experience
-                            .content
-                                .item
-                                    h3.title
-                                        | Web Developer - 
-                                        span.place
-                                            a(href='https://mesa247.pe', target='_blank') MESA 247
-                                        span.year (Feb 2016 - Dec 2016)
+                                            | I play with some frameworks, regularly develop or improve open source projects, because I am always open to new technologies. 
+                            section.experience.section
+                                .section-inner
+                                    h2.heading Work Experience
+                                    .content
+                                        .item
+                                            h3.title
+                                                | Web Developer - 
+                                                span.place
+                                                    a(href='https://mesa247.pe', target='_blank') MESA 247
+                                                span.year (Feb 2016 - Dec 2016)
+                                            p
+                                                | Software Development and consulting focused on agile software development practices, software analysis, design and SEO for all web platforms (Peru & Chile domains), using open source products and libraries in PHP with Codeigniter Framework.
+                                                | Technologies:
+                                            ul
+                                                li
+                                                    | Amazon Web Services (EC2: Apache & Nginx, S3 & Cloudfront, RDS: Mysql & MariaDB, Elasticache: Redis).
+                                                li
+                                                    | SEO: (Increase Google Speed Insight ranking and Organic Traffic, Google Webmaster Tools, MOZ, Meta descriptions).
+                                                li PHP 5.6 & 7 (Laravel/Codeigniter)
+                                                li JavaScript, JSON, HTML5, CSS3
+                                                li Improvement & Security for development environments
+                                        .item
+                                            h3.title
+                                                | Backend Developer - 
+                                                span.place
+                                                    a(href='http://medioseideas.com', target='_blank') Medios e Ideas
+                                                span.year (Nov 2014 - Dec 2015)
+                                            ul
+                                                li Architecture, implementation and testing of PHP apps.
+                                                li Write code, with care to make clean, readable, scalable and maintainable.
+                                                li Use Facebook and Google+ APIs.
+                                                li Maintenance of other web applications, with another frameworks.
+                                                li Propose new features in development.
+                                                li Safe code and available for future developers in Bitbucket and Github accounts.
+                                                li
+                                                    | Technologies: PHP (Laravel, Zend, Codeigniter), Javascript (Jquery, Ajax, Coffescript), LAMP, HTML5 (Jade, HAML), Linux (CentOS, Ubuntu), macOS.   
+                        #projects_portfolio.tab-pane(role='tabpanel')
+                            section.latest.section
+                                .section-inner
+                                    h2.heading Latest Projects
+                                    .content
+                                        .item.featured.text-center
+                                            h3.title
+                                                a(href='#', target='_blank') Disease Diagnostic Application
+                                            p.summary My last project
+                                            .featured-image
+                                                a(href='http://github.com/helmerdavila/disease-diagnostic-laravel', target='_blank')
+                                                    img.img-responsive.project-image(src='assets/images/medic.png', alt='Disease Diagnostic')
+                                                .ribbon
+                                                    .text OpenSource
+                                            .desc.text-left
+                                                p
+                                                    | This is my first open source Laravel project. The Disease Diagnostic it's a web browser app helpful for any doctor, take the patient
+                                                    | diagnostic information, show detailed charts and statistics from every state (or city).
+                                                p
+                                                    | The application was developed for my Engineer Degree, and the target is Peruvian people. My next goal is bring this to all people and
+                                                    | it will be translated to english language.
+                                                p
+                                                    | PS: Do you give me a star to my project in Github?
+                                                p
+                                                    span.label.label-info Open Source
+                                                    span.label.label-info Travis CI
+                                                    span.label.label-info Laravel
+                                                    span.label.label-info Spanish
+                                        hr.divider
+                                        .item.row
+                                            .desc.col-md-12.col-sm-12.col-xs-12
+                                                h3.title
+                                                    a(href='#') LexPeru
+                                                p SaaS app for management, search and query Peruvian laws.
+                                                p
+                                                    a.more-link(href='#')
+                                                        i.fa.fa-external-link
+                                                        |  Private setup
+                                        .item.row
+                                            .desc.col-md-12.col-sm-12.col-xs-12
+                                                h3.title
+                                                    a(href='#') Inventory Management
+                                                p
+                                                    | This application can be used for small and intermediate stores, see the products stock, makes sells, generate reports.
+                                                p
+                                                    a.more-link(href='#')
+                                                        i.fa.fa-external-link
+                                                        |  Private setup
+                                        .item.row
+                                            .desc.col-md-12.col-sm-12.col-xs-12
+                                                h3.title
+                                                    a(href='http://kuickit.com', target='_blank') Kuickit
+                                                p Very nice web site with interestig information about curious things.
+                                                p
+                                                    a.more-link(href='http://kuickit.com', target='_blank')
+                                                        i.fa.fa-external-link
+                                                        |  See this site!
+                                        .item.row
+                                            .desc.col-md-12.col-sm-12.col-xs-12
+                                                h3.title
+                                                    a(href='http://chusmaposters.com', target='_blank') Chusmaposters
+                                                p Small store for sell beautiful and geek posters with wooden frames.
+                                                p
+                                                    a.more-link(href='http://chusmaposters.com', target='_blank')
+                                                        i.fa.fa-external-link
+                                                        |  See this site!
+                        #github_activity.tab-pane(role='tabpanel')
+                            section.github.section
+                                .section-inner
+                                    h2.heading My GitHub
                                     p
-                                        | Software Development and consulting focused on agile software development practices, software analysis, design and SEO for all web platforms (Peru & Chile domains), using open source products and libraries in PHP with Codeigniter Framework.
-                                        | Technologies:
-                                    ul
-                                        li
-                                            | Amazon Web Services (EC2: Apache & Nginx, S3 & Cloudfront, RDS: Mysql & MariaDB, Elasticache: Redis).
-                                        li
-                                            | SEO: (Increase Google Speed Insight ranking and Organic Traffic, Google Webmaster Tools, MOZ, Meta descriptions).
-                                        li PHP 5.6 & 7 (Laravel/Codeigniter)
-                                        li JavaScript, JSON, HTML5, CSS3
-                                        li Improvement & Security for development environments
-                                // //item
-                                .item
-                                    h3.title
-                                        | Backend Developer - 
-                                        span.place
-                                            a(href='http://medioseideas.com', target='_blank') Medios e Ideas
-                                        span.year (Nov 2014 - Dec 2015)
-                                    ul
-                                        li Architecture, implementation and testing of PHP apps.
-                                        li Write code, with care to make clean, readable, scalable and maintainable.
-                                        li Use Facebook and Google+ APIs.
-                                        li Maintenance of other web applications, with another frameworks.
-                                        li Propose new features in development.
-                                        li Safe code and available for future developers in Bitbucket and Github accounts.
-                                        li
-                                            | Technologies: PHP (Laravel, Zend, Codeigniter), Javascript (Jquery, Ajax, Coffescript), LAMP, HTML5 (Jade, HAML), Linux (CentOS, Ubuntu), macOS.
-                                // //item
-                            // //content
-                        // //section-inner
-                    // //section
-                    section.github.section
-                        .section-inner
-                            h2.heading My GitHub
-                            p
-                                | Last Activity in my 
-                                a(href='http://github.com/helmerdavila', target='_blank') Github
-                                |   Account.
-                                #ghfeed.ghfeed
-                                // //ghfeed
-                        // //secton-inner
-                    // //section
+                                        | Last Activity in my 
+                                        a(href='http://github.com/helmerdavila', target='_blank') Github
+                                        |   Account.
+                                        #ghfeed.ghfeed
                 // //primary
             // //row
         // //masonry
